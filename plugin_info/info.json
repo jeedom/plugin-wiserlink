@@ -1,0 +1,10 @@
+{
+	"id" : "wiserlink",
+	"name" : "WiserLink",
+	"description" : "Plugin pour afficher les données du module IP Wiser",
+	"licence" : "AGPL",
+	"author" : "Ludovic (sarakha63)",
+	"require" : "3.0",
+	"category" : "energy",
+	"display" : "panel"
+}
