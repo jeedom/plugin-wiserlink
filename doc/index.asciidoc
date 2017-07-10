@@ -24,5 +24,3 @@ Et on retrouve aussi les deux éventuelles entrées impulsionnelles.
 
 Vous pouvez pour chaque commande choisir si oui ou non elles seront visibles et attribuer un icône.
 
-
-=== Le panel
