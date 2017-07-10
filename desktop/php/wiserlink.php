@@ -44,7 +44,7 @@ foreach ($eqLogics as $eqLogic) {
 		$opacity = 'opacity:0.3;';
 	}
 	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="text-align: center; background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
-	echo '<img src="/plugins/wiserlink/core/config/wiser.png" height="105" width="105" />';
+	echo '<img src="plugins/wiserlink/core/config/wiser.png" height="105" width="105" />';
 	echo "<br>";
 	echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;">' . $eqLogic->getHumanName(true, true) . '</span>';
 	echo '</div>';
@@ -129,7 +129,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
 </div>
 <div class="col-sm-6">
 <center>
-  <img src="/plugins/wiserlink/core/config/wiser.png" data-original=".png" id="img_device" class="img-responsive" style="max-height : 400px;"/>
+  <img src="plugins/wiserlink/core/config/wiser.png" data-original=".png" id="img_device" class="img-responsive" style="max-height : 400px;"/>
 </center>
 </div>
 </div>

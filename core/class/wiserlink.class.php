@@ -91,6 +91,10 @@ class wiserlink extends eqLogic {
 		$this->getwiserlinkInfo();
 	}
 	
+	public function getImage() {
+        return 'plugins/wiserlink/core/config/wiser.png';
+    }
+	
 	public function postSave() {
 		$cmd = $this->getCmd(null, 'ct1');
 		if (!is_object($cmd)) {
