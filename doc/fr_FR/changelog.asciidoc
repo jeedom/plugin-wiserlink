@@ -1,1 +1,1 @@
-Changelog détaillé : https://github.com/jeedom/plugin-denonavr/commits/stable
+Changelog détaillé : https://github.com/jeedom/plugin-wiserlink/commits/stable
