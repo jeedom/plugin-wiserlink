@@ -1,6 +1,6 @@
 === Plugin Konfiguration
 
-Le plugin ne comporte pas de configuration générale.
+Das Plugin hat keine allgemeine Konfiguration.
 
 
 === Création des équipements
@@ -13,7 +13,7 @@ Les infos nécessaires à sa création sont :
   - Le nom d'utilisateur (admin par défaut)
   - Le mot de passe (admin par défaut)
   
-=== Les commandes
+=== Die Befehle
 
 Les commandes sont créées automatiquement :
 
