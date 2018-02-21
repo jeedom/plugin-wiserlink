@@ -1,1 +1,0 @@
-Detailliertes Änderungsprotokoll : https://github.com/jeedom/plugin-wiserlink/commits/stable

@@ -5,7 +5,7 @@
 	"licence" : "AGPL",
 	"author" : "Ludovic (sarakha63)",
 	"require" : "3.0",
-	"category" : "energy",
-	"changelog" : "https://github.com/jeedom/plugin-wiserlink/blob/stable/doc/#language#/changelog.asciidoc",
-	"documentation" : "https://github.com/jeedom/plugin-wiserlink/blob/stable/doc/#language#/index.asciidoc"
+        "category" : "energy",
+        "changelog" : "https://jeedom.github.io/plugin-wiserlink/#language#/changelog",
+        "documentation" : "https://jeedom.github.io/plugin-wiserlink/#language#/"
 }
