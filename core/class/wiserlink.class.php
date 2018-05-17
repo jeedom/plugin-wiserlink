@@ -79,6 +79,10 @@ class wiserlink extends eqLogic {
 					$this->checkAndUpdateCmd('gaz', $measure['Power']);
 					$this->checkAndUpdateCmd('gaz_energy', $measure['EnergyConsumed']);
 				}
+				else if (in_array($measure['Type'], array('Cold Water Meter'))){
+					$this->checkAndUpdateCmd('eau2', $measure['Power']);
+					$this->checkAndUpdateCmd('eau2_energy', $measure['EnergyConsumed']);
+				}
 			}
 		}
 	}
@@ -301,7 +305,7 @@ class wiserlink extends eqLogic {
 			$cmd->setIsVisible(0);
 			$cmd->setIsHistorized(1);
 			$cmd->setName(__('Gaz', __FILE__));
-			$cmd->setUnite('W');
+			$cmd->setUnite('m3');
 			$cmd->setTemplate('dashboard', 'line');
 			$cmd->setDisplay('icon','<i class="icon nature-fire14"></i>');
 			$cmd->setOrder(13);
@@ -318,7 +322,7 @@ class wiserlink extends eqLogic {
 			$cmd->setIsVisible(0);
 			$cmd->setIsHistorized(1);
 			$cmd->setName(__('Gaz Energie', __FILE__));
-			$cmd->setUnite('kWh');
+			$cmd->setUnite('m3');
 			$cmd->setTemplate('dashboard', 'line');
 			$cmd->setOrder(14);
 		}
@@ -333,8 +337,8 @@ class wiserlink extends eqLogic {
 			$cmd->setLogicalId('eau');
 			$cmd->setIsVisible(0);
 			$cmd->setIsHistorized(1);
-			$cmd->setName(__('Eau', __FILE__));
-			$cmd->setUnite('W');
+			$cmd->setName(__('Eau chaude', __FILE__));
+			$cmd->setUnite('m3');
 			$cmd->setTemplate('dashboard', 'line');
 			$cmd->setDisplay('icon','<i class="icon nature-watering1"></i>');
 			$cmd->setOrder(15);
@@ -350,10 +354,43 @@ class wiserlink extends eqLogic {
 			$cmd->setLogicalId('eau_energy');
 			$cmd->setIsVisible(0);
 			$cmd->setIsHistorized(1);
-			$cmd->setName(__('Eau Energie', __FILE__));
-			$cmd->setUnite('kWh');
+			$cmd->setName(__('Eau chaude Total', __FILE__));
+			$cmd->setUnite('m3');
 			$cmd->setTemplate('dashboard', 'line');
 			$cmd->setOrder(16);
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'eau2');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('eau2');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Eau froide', __FILE__));
+			$cmd->setUnite('m3');
+			$cmd->setTemplate('dashboard', 'line');
+			$cmd->setDisplay('icon','<i class="icon nature-watering1"></i>');
+			$cmd->setOrder(17);
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'eau2_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('eau2_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Eau froide Total', __FILE__));
+			$cmd->setUnite('m3');
+			$cmd->setTemplate('dashboard', 'line');
+			$cmd->setOrder(18);
 		}
 		$cmd->setType('info');
 		$cmd->setSubType('numeric');
