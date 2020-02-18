@@ -1,0 +1,71 @@
+{
+    "desktop\/modal\/health.php": {
+        "Image": "Image",
+        "Module": "Module",
+        "ID": "ID",
+        "IP": "IP",
+        "Date création": "Date création"
+    },
+    "desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "Santé wiserlink",
+        "Afficher": "Afficher",
+        "Historiser": "Historiser",
+        "Tester": "Tester"
+    },
+    "desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "Vous êtes en mode édition vous pouvez redimensionner les widgets"
+    },
+    "desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Ajouter un dispositif": "Ajouter un dispositif",
+        "Rechercher": "Rechercher",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
+        "Santé": "Santé",
+        "Mes Wiserlinks": "Mes Wiserlinks",
+        "Sauvegarder": "Sauvegarder",
+        "Supprimer": "Supprimer",
+        "Configuration avancée": "Configuration avancée",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
+        "Nom de l'équipement": "Nom de l'équipement",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Adresse IP": "Adresse IP",
+        "Login": "Login",
+        "Mot de passe": "Mot de passe",
+        "Nom": "Nom",
+        "Options": "Options",
+        "Action": "Action"
+    },
+    "desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>",
+        "Liste objets": "Liste objets",
+        "Rechercher": "Rechercher"
+    },
+    "core\/class\/wiserlink.class.php": {
+        "Puissance-1": "Puissance-1",
+        "Energie-1": "Energie-1",
+        "Puissance-2": "Puissance-2",
+        "Energie-2": "Energie-2",
+        "Puissance-3": "Puissance-3",
+        "Energie-3": "Energie-3",
+        "Puissance-4": "Puissance-4",
+        "Energie-4": "Energie-4",
+        "Puissance-5": "Puissance-5",
+        "Energie-5": "Energie-5",
+        "Teleinfo": "Teleinfo",
+        "Teleinfo Energie": "Teleinfo Energie",
+        "Gaz": "Gaz",
+        "Gaz Energie": "Gaz Energie",
+        "Eau chaude": "Eau chaude",
+        "Eau chaude Total": "Eau chaude Total",
+        "Eau froide": "Eau froide",
+        "Eau froide Total": "Eau froide Total",
+        "Rafraichir": "Rafraichir"
+    }
+}

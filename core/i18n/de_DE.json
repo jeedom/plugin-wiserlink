@@ -1,0 +1,71 @@
+{
+    "desktop\/modal\/health.php": {
+        "Image": "Bild",
+        "Module": "Modul",
+        "ID": "Identifikation",
+        "IP": "IP",
+        "Date création": "Erstellungsdatum"
+    },
+    "desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "Wiserlink Gesundheit",
+        "Afficher": "Anzeige",
+        "Historiser": "historisieren",
+        "Tester": "Test"
+    },
+    "desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "Im Bearbeitungsmodus können Sie die Größe von Widgets ändern"
+    },
+    "desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Ajouter un dispositif": "Fügen Sie ein Gerät hinzu",
+        "Rechercher": "Suche",
+        "Gestion": "Management",
+        "Ajouter": "hinzufügen",
+        "Santé": "Gesundheit",
+        "Mes Wiserlinks": "Meine Wiserlinks",
+        "Sauvegarder": "speichern",
+        "Supprimer": "Entfernen",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Equipement": "Ausrüstung",
+        "Commandes": "Befehle",
+        "Nom de l'équipement": "Name der Ausrüstung",
+        "Objet parent": "Übergeordnetes Objekt",
+        "Aucun": "keine",
+        "Catégorie": "Kategorie",
+        "Activer": "activate",
+        "Visible": "sichtbar",
+        "Adresse IP": "IP-Adresse",
+        "Login": "Login",
+        "Mot de passe": "Passwort",
+        "Nom": "Name",
+        "Options": "Optionen",
+        "Action": "Aktion"
+    },
+    "desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "Kein Stammobjekt gefunden. Um eine zu erstellen, gehen Sie zu Allgemein -&gt; Objekt. <br\/> Wenn Sie nicht wissen, was Sie tun sollen, oder wenn Sie Jeedom zum ersten Mal verwenden, zögern Sie nicht, diese <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">Seite<\/a> zu konsultieren",
+        "Liste objets": "Liste der Objekte",
+        "Rechercher": "Suche"
+    },
+    "core\/class\/wiserlink.class.php": {
+        "Puissance-1": "Power-1",
+        "Energie-1": "Energy-1",
+        "Puissance-2": "Power-2",
+        "Energie-2": "Energy-2",
+        "Puissance-3": "Power-3",
+        "Energie-3": "Energy-3",
+        "Puissance-4": "Power 4",
+        "Energie-4": "Energy-4",
+        "Puissance-5": "Power-5",
+        "Energie-5": "Energy-5",
+        "Teleinfo": "TELEINFO",
+        "Teleinfo Energie": "Teleinfo Energy",
+        "Gaz": "Gas",
+        "Gaz Energie": "Gas Energy",
+        "Eau chaude": "Hot water",
+        "Eau chaude Total": "Total hot water",
+        "Eau froide": "Cold water",
+        "Eau froide Total": "Total cold water",
+        "Rafraichir": "Refresh"
+    }
+}
