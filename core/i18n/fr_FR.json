@@ -1,21 +1,18 @@
 {
-    "desktop\/modal\/health.php": {
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
         "Image": "Image",
         "Module": "Module",
         "ID": "ID",
         "IP": "IP",
         "Date création": "Date création"
     },
-    "desktop\/js\/wiserlink.js": {
-        "Santé wiserlink": "Santé wiserlink",
-        "Afficher": "Afficher",
-        "Historiser": "Historiser",
-        "Tester": "Tester"
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>",
+        "Liste objets": "Liste objets",
+        "Rechercher": "Rechercher"
     },
-    "desktop\/js\/panel.js": {
-        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "Vous êtes en mode édition vous pouvez redimensionner les widgets"
-    },
-    "desktop\/php\/wiserlink.php": {
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Ajouter un dispositif": "Ajouter un dispositif",
         "Rechercher": "Rechercher",
@@ -41,13 +38,16 @@
         "Options": "Options",
         "Action": "Action"
     },
-    "desktop\/php\/panel.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>",
-        "Liste objets": "Liste objets",
-        "Rechercher": "Rechercher"
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "Vous êtes en mode édition vous pouvez redimensionner les widgets"
     },
-    "core\/class\/wiserlink.class.php": {
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "Santé wiserlink",
+        "Afficher": "Afficher",
+        "Historiser": "Historiser",
+        "Tester": "Tester"
+    },
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
         "Puissance-1": "Puissance-1",
         "Energie-1": "Energie-1",
         "Puissance-2": "Puissance-2",

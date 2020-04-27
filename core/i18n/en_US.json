@@ -1,71 +1,71 @@
 {
-    "desktop\/modal\/health.php": {
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
         "Image": "Picture",
         "Module": "Module",
         "ID": "ID",
         "IP": "IP",
         "Date création": "Creation Date"
     },
-    "desktop\/js\/wiserlink.js": {
-        "Santé wiserlink": "Wiserlink health",
-        "Afficher": "Pin up",
-        "Historiser": "historicize",
-        "Tester": "Test"
-    },
-    "desktop\/js\/panel.js": {
-        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "You are in edit mode you can resize widgets"
-    },
-    "desktop\/php\/wiserlink.php": {
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
         "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Ajouter un dispositif": "Add a device",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "",
+        "Liste objets": "Object list",
+        "Rechercher": "Search"
+    },
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Ajouter un dispositif": "",
         "Rechercher": "Search",
         "Gestion": "Management",
         "Ajouter": "Add",
         "Santé": "Health",
-        "Mes Wiserlinks": "My Wiserlinks",
+        "Mes Wiserlinks": "",
         "Sauvegarder": "Save",
-        "Supprimer": "Remove",
+        "Supprimer": "Delete",
         "Configuration avancée": "Advanced configuration",
         "Equipement": "Equipment",
-        "Commandes": "Orders",
+        "Commandes": "Commands",
         "Nom de l'équipement": "Name of equipment",
         "Objet parent": "Parent object",
-        "Aucun": "No",
+        "Aucun": "None",
         "Catégorie": "Category",
         "Activer": "Activate",
         "Visible": "Visible",
         "Adresse IP": "IP adress",
         "Login": "Login",
         "Mot de passe": "Password",
-        "Nom": "Last name",
-        "Options": "options",
+        "Nom": "Name",
+        "Options": "Options",
         "Action": "Action"
     },
-    "desktop\/php\/panel.php": {
-        "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "No root object found. To create one, go to General -&gt; Object. <br\/> If you do not know what to do or it is the first time you use Jeedom do not hesitate to consult this <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>",
-        "Liste objets": "List of objects",
-        "Rechercher": "Search"
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": ""
     },
-    "core\/class\/wiserlink.class.php": {
-        "Puissance-1": "Power-1",
-        "Energie-1": "Energy-1",
-        "Puissance-2": "Power-2",
-        "Energie-2": "Energy-2",
-        "Puissance-3": "Power-3",
-        "Energie-3": "Energy-3",
-        "Puissance-4": "Power 4",
-        "Energie-4": "Energy-4",
-        "Puissance-5": "Power-5",
-        "Energie-5": "Energy-5",
-        "Teleinfo": "Teleinfo",
-        "Teleinfo Energie": "Teleinfo Energy",
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "",
+        "Afficher": "Show",
+        "Historiser": "Historize",
+        "Tester": "Test"
+    },
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Puissance-1": "",
+        "Energie-1": "",
+        "Puissance-2": "",
+        "Energie-2": "",
+        "Puissance-3": "",
+        "Energie-3": "",
+        "Puissance-4": "",
+        "Energie-4": "",
+        "Puissance-5": "",
+        "Energie-5": "",
+        "Teleinfo": "",
+        "Teleinfo Energie": "",
         "Gaz": "Gas",
-        "Gaz Energie": "Gas Energy",
-        "Eau chaude": "Hot water",
-        "Eau chaude Total": "Total hot water",
-        "Eau froide": "Cold water",
-        "Eau froide Total": "Total cold water",
+        "Gaz Energie": "",
+        "Eau chaude": "",
+        "Eau chaude Total": "",
+        "Eau froide": "",
+        "Eau froide Total": "",
         "Rafraichir": "Refresh"
     }
 }

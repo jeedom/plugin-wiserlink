@@ -1,4 +1,4 @@
-Plugin configuration 
+Configuração do plugin 
 =======================
 
 .
@@ -16,7 +16,7 @@ Plugin configuration
 
 -   
 
-The orders 
+ 
 =============
 
  :

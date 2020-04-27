@@ -1,71 +1,71 @@
 {
-    "desktop\/modal\/health.php": {
-        "Image": "Image",
-        "Module": "Module",
-        "ID": "ID",
-        "IP": "IP",
-        "Date création": "Date création"
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
+        "Image": "Изображение",
+        "Module": "Модуль",
+        "ID": "Идентификатор",
+        "IP": "",
+        "Date création": "дата создания"
     },
-    "desktop\/js\/wiserlink.js": {
-        "Santé wiserlink": "Santé wiserlink",
-        "Afficher": "Afficher",
-        "Historiser": "Historiser",
-        "Tester": "Tester"
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "",
+        "Liste objets": "Список элементов",
+        "Rechercher": "поиск"
     },
-    "desktop\/js\/panel.js": {
-        "Vous êtes en mode édition vous pouvez redimensionner les widgets": "Vous êtes en mode édition vous pouvez redimensionner les widgets"
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Ajouter un dispositif": "",
+        "Rechercher": "поиск",
+        "Gestion": "Управление",
+        "Ajouter": "Добавить",
+        "Santé": "Здоровье",
+        "Mes Wiserlinks": "",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "удаление",
+        "Configuration avancée": "Расширенные настройки",
+        "Equipement": "Оборудование",
+        "Commandes": "Команды",
+        "Nom de l'équipement": "Название оборудования",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Catégorie": "категория",
+        "Activer": "активировать",
+        "Visible": "Видимый",
+        "Adresse IP": "IP Адрес ",
+        "Login": "",
+        "Mot de passe": "Пароль",
+        "Nom": "Имя",
+        "Options": "Опции",
+        "Action": "Действие"
     },
-    "desktop\/php\/wiserlink.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Ajouter un dispositif": "Ajouter un dispositif",
-        "Rechercher": "Rechercher",
-        "Gestion": "Gestion",
-        "Ajouter": "Ajouter",
-        "Santé": "Santé",
-        "Mes Wiserlinks": "Mes Wiserlinks",
-        "Sauvegarder": "Sauvegarder",
-        "Supprimer": "Supprimer",
-        "Configuration avancée": "Configuration avancée",
-        "Equipement": "Equipement",
-        "Commandes": "Commandes",
-        "Nom de l'équipement": "Nom de l'équipement",
-        "Objet parent": "Objet parent",
-        "Aucun": "Aucun",
-        "Catégorie": "Catégorie",
-        "Activer": "Activer",
-        "Visible": "Visible",
-        "Adresse IP": "Adresse IP",
-        "Login": "Login",
-        "Mot de passe": "Mot de passe",
-        "Nom": "Nom",
-        "Options": "Options",
-        "Action": "Action"
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": ""
     },
-    "desktop\/php\/panel.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>",
-        "Liste objets": "Liste objets",
-        "Rechercher": "Rechercher"
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "",
+        "Afficher": "дисплей",
+        "Historiser": "История",
+        "Tester": "Тест"
     },
-    "core\/class\/wiserlink.class.php": {
-        "Puissance-1": "Power-1",
-        "Energie-1": "Energy-1",
-        "Puissance-2": "Power-2",
-        "Energie-2": "Energy-2",
-        "Puissance-3": "Power-3",
-        "Energie-3": "Energy-3",
-        "Puissance-4": "Power 4",
-        "Energie-4": "Energy-4",
-        "Puissance-5": "Power-5",
-        "Energie-5": "Energy-5",
-        "Teleinfo": "TELEINFO",
-        "Teleinfo Energie": "Teleinfo Energy",
-        "Gaz": "Gas",
-        "Gaz Energie": "Gas Energy",
-        "Eau chaude": "Hot water",
-        "Eau chaude Total": "Total hot water",
-        "Eau froide": "Cold water",
-        "Eau froide Total": "Total cold water",
-        "Rafraichir": "Refresh"
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Puissance-1": "",
+        "Energie-1": "",
+        "Puissance-2": "",
+        "Energie-2": "",
+        "Puissance-3": "",
+        "Energie-3": "",
+        "Puissance-4": "",
+        "Energie-4": "",
+        "Puissance-5": "",
+        "Energie-5": "",
+        "Teleinfo": "",
+        "Teleinfo Energie": "",
+        "Gaz": "",
+        "Gaz Energie": "",
+        "Eau chaude": "",
+        "Eau chaude Total": "",
+        "Eau froide": "",
+        "Eau froide Total": "",
+        "Rafraichir": "Обновить"
     }
 }
