@@ -1,24 +1,24 @@
 {
     "changelog.md": {
-        "17-05-2018": "",
-        "Rajout de la notion eau chaude eau froide": ""
+        "17-05-2018": "17\/05\/2018",
+        "Rajout de la notion eau chaude eau froide": "Adição do conceito água quente água fria"
     },
     "index.md": {
         "Configuration du plugin": "Configuração do plugin",
-        "Le plugin ne comporte pas de configuration générale": "",
-        "Création des équipements": "",
-        "Chaque équipement correspond à un WiserLink": "",
-        "Les infos nécessaires à sa création sont": "",
-        "L'adresse Ip du Wiser": "",
-        "Le nom d'utilisateur (admin par défaut)": "",
-        "Le mot de passe (admin par défaut)": "",
-        "Les commandes": "",
-        "Les commandes sont créées automatiquement": "",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "",
-        "retrouve aussi la téléinfo": "",
-        "Et on retrouve aussi les deux éventuelles": "",
-        "entrées impulsionnelles": "",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "",
-        "visibles et attribuer un icône": ""
+        "Le plugin ne comporte pas de configuration générale": "O plug-in não possui uma configuração geral",
+        "Création des équipements": "Criação de equipamento",
+        "Chaque équipement correspond à un WiserLink": "Cada dispositivo corresponde a um WiserLink",
+        "Les infos nécessaires à sa création sont": "As informações necessárias para sua criação são",
+        "L'adresse Ip du Wiser": "O endereço IP do Wiser",
+        "Le nom d'utilisateur (admin par défaut)": "Nome de usuário (administrador por padrão)",
+        "Le mot de passe (admin par défaut)": "Senha (admin por padrão)",
+        "Les commandes": "Pedidos",
+        "Les commandes sont créées automatiquement": "Os pedidos são criados automaticamente",
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "Nós encontramos o poder e a energia de cada canal do Wiser. Nós",
+        "retrouve aussi la téléinfo": "encontre também as notícias da TV",
+        "Et on retrouve aussi les deux éventuelles": "E também encontramos as duas possíveis",
+        "entrées impulsionnelles": "entradas de impulso",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "Você pode escolher, para cada pedido, se eles serão ou não",
+        "visibles et attribuer un icône": "visível e atribua um ícone"
     }
 }

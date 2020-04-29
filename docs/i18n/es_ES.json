@@ -1,24 +1,24 @@
 {
     "changelog.md": {
-        "17-05-2018": "",
-        "Rajout de la notion eau chaude eau froide": ""
+        "17-05-2018": "2018-05-17",
+        "Rajout de la notion eau chaude eau froide": "Adición del concepto agua caliente agua fría"
     },
     "index.md": {
         "Configuration du plugin": "Configuración del plugin",
-        "Le plugin ne comporte pas de configuration générale": "",
-        "Création des équipements": "",
-        "Chaque équipement correspond à un WiserLink": "",
-        "Les infos nécessaires à sa création sont": "",
-        "L'adresse Ip du Wiser": "",
-        "Le nom d'utilisateur (admin par défaut)": "",
-        "Le mot de passe (admin par défaut)": "",
+        "Le plugin ne comporte pas de configuration générale": "El complemento no tiene una configuración general",
+        "Création des équipements": "Creación de equipos",
+        "Chaque équipement correspond à un WiserLink": "Cada dispositivo corresponde a un WiserLink",
+        "Les infos nécessaires à sa création sont": "La información necesaria para su creación es",
+        "L'adresse Ip du Wiser": "La dirección IP más sabia",
+        "Le nom d'utilisateur (admin par défaut)": "Nombre de usuario (administrador por defecto)",
+        "Le mot de passe (admin par défaut)": "Contraseña (administrador por defecto)",
         "Les commandes": "Las órdenes",
-        "Les commandes sont créées automatiquement": "",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "",
-        "retrouve aussi la téléinfo": "",
-        "Et on retrouve aussi les deux éventuelles": "",
-        "entrées impulsionnelles": "",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "",
-        "visibles et attribuer un icône": ""
+        "Les commandes sont créées automatiquement": "Los pedidos se crean automáticamente",
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "Encontramos el poder y la energía para cada canal del Wiser. Nosotros",
+        "retrouve aussi la téléinfo": "también encontrar las noticias de televisión",
+        "Et on retrouve aussi les deux éventuelles": "Y también encontramos los dos posibles",
+        "entrées impulsionnelles": "entradas de impulso",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "Para cada orden puede elegir si serán o no",
+        "visibles et attribuer un icône": "visible y asignar un icono"
     }
 }

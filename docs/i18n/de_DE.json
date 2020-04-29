@@ -1,24 +1,24 @@
 {
     "changelog.md": {
-        "17-05-2018": "",
-        "Rajout de la notion eau chaude eau froide": ""
+        "17-05-2018": "2018-05-17",
+        "Rajout de la notion eau chaude eau froide": "Ergänzung des Konzepts Warmwasser Kaltwasser"
     },
     "index.md": {
         "Configuration du plugin": "Plugin Konfiguration",
-        "Le plugin ne comporte pas de configuration générale": "",
-        "Création des équipements": "",
-        "Chaque équipement correspond à un WiserLink": "",
-        "Les infos nécessaires à sa création sont": "",
-        "L'adresse Ip du Wiser": "",
-        "Le nom d'utilisateur (admin par défaut)": "",
-        "Le mot de passe (admin par défaut)": "",
+        "Le plugin ne comporte pas de configuration générale": "Das Plugin hat keine allgemeine Konfiguration",
+        "Création des équipements": "Geräteerstellung",
+        "Chaque équipement correspond à un WiserLink": "Jedes Gerät entspricht einem WiserLink",
+        "Les infos nécessaires à sa création sont": "Die für seine Erstellung erforderlichen Informationen sind",
+        "L'adresse Ip du Wiser": "Die klügere IP-Adresse",
+        "Le nom d'utilisateur (admin par défaut)": "Benutzername (standardmäßig admin)",
+        "Le mot de passe (admin par défaut)": "Passwort (standardmäßig admin)",
         "Les commandes": "Bestellungen",
-        "Les commandes sont créées automatiquement": "",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "",
-        "retrouve aussi la téléinfo": "",
-        "Et on retrouve aussi les deux éventuelles": "",
-        "entrées impulsionnelles": "",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "",
-        "visibles et attribuer un icône": ""
+        "Les commandes sont créées automatiquement": "Bestellungen werden automatisch erstellt",
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "Wir finden die Kraft und Energie für jeden Kanal des Weiseren. Wir",
+        "retrouve aussi la téléinfo": "finden Sie auch die TV-Nachrichten",
+        "Et on retrouve aussi les deux éventuelles": "Und wir finden auch die beiden möglich",
+        "entrées impulsionnelles": "Impulseingänge",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "Sie können für jede Bestellung auswählen, ob dies der Fall sein soll oder nicht",
+        "visibles et attribuer un icône": "sichtbar und weisen Sie ein Symbol zu"
     }
 }
