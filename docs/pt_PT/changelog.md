@@ -1,5 +1,9 @@
 # Registro de alterações WiserLink
 
-17/05/2018
+>**IMPORTANTE**
+>
+>Como lembrete, se não houver informações sobre a atualização, isso significa que se trata apenas da atualização da documentação, tradução ou texto
 
-Adição do conceito água quente água fria
+# 17/05/2018
+
+- Adição do conceito água quente água fria

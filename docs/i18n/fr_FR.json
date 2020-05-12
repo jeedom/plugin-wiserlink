@@ -1,11 +1,13 @@
 {
     "changelog.md": {
         "Changelog WiserLink": "Changelog WiserLink",
+        "IMPORTANT": "IMPORTANT",
+        "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte",
         "17-05-2018": "17-05-2018",
         "Rajout de la notion eau chaude eau froide": "Rajout de la notion eau chaude eau froide"
     },
     "index.md": {
-        "Configuration du plugin": "Configuration du plugin",
+        "Plugin Wiserlink": "Plugin Wiserlink",
         "Le plugin ne comporte pas de configuration générale": "Le plugin ne comporte pas de configuration générale",
         "Création des équipements": "Création des équipements",
         "Chaque équipement correspond à un WiserLink": "Chaque équipement correspond à un WiserLink",
@@ -15,11 +17,9 @@
         "Le mot de passe (admin par défaut)": "Le mot de passe (admin par défaut)",
         "Les commandes": "Les commandes",
         "Les commandes sont créées automatiquement": "Les commandes sont créées automatiquement",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On",
-        "retrouve aussi la téléinfo": "retrouve aussi la téléinfo",
-        "Et on retrouve aussi les deux éventuelles": "Et on retrouve aussi les deux éventuelles",
-        "entrées impulsionnelles": "entrées impulsionnelles",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "Vous pouvez pour chaque commande choisir si oui ou non elles seront",
-        "visibles et attribuer un icône": "visibles et attribuer un icône"
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser": "On retrouve la puissance et l'énergie pour chaque canal du Wiser",
+        "On retrouve aussi la téléinfo": "On retrouve aussi la téléinfo",
+        "Et on retrouve aussi les deux éventuelles entrées impulsionnelles": "Et on retrouve aussi les deux éventuelles entrées impulsionnelles",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront visibles et attribuer un icône": "Vous pouvez pour chaque commande choisir si oui ou non elles seront visibles et attribuer un icône"
     }
 }

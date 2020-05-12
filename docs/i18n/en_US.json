@@ -1,11 +1,19 @@
 {
     "changelog.md": {
         "Changelog WiserLink": "Changelog WiserLink",
+        "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text",
         "17-05-2018": "2018-05-17",
-        "Rajout de la notion eau chaude eau froide": "Addition of the concept hot water cold water"
+        "Rajout de la notion eau chaude eau froide": "Addition of the concept hot water cold water",
+        " IMPORTANT.": " Important.",
+        " IMPORTANT?": " Important?",
+        "IMPORTANT ": "Important ",
+        "[IMPORTANT": "[Important",
+        "IMPORTANT]": "Important]",
+        "*IMPORTANT": "*Important",
+        "IMPORTANT*": "Important*"
     },
     "index.md": {
-        "Configuration du plugin": "Plugin configuration",
+        "Plugin Wiserlink": "Wiserlink plugin",
         "Le plugin ne comporte pas de configuration générale": "The plugin does not have a general configuration",
         "Création des équipements": "Equipment creation",
         "Chaque équipement correspond à un WiserLink": "Each device corresponds to a WiserLink",
@@ -15,11 +23,9 @@
         "Le mot de passe (admin par défaut)": "Password (admin by default)",
         "Les commandes": "The orders",
         "Les commandes sont créées automatiquement": "Orders are created automatically",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "We find the power and energy for each channel of the Wiser. We",
-        "retrouve aussi la téléinfo": "also find the TV news",
-        "Et on retrouve aussi les deux éventuelles": "And we also find the two possible",
-        "entrées impulsionnelles": "impulse inputs",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "You can for each order choose whether or not they will be",
-        "visibles et attribuer un icône": "visible and assign an icon"
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser": "We find the power and energy for each channel of the Wiser",
+        "On retrouve aussi la téléinfo": "We also find the TV news",
+        "Et on retrouve aussi les deux éventuelles entrées impulsionnelles": "And we also find the two possible impulse inputs",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront visibles et attribuer un icône": "You can for each order choose whether or not they will be visible and assign an icon"
     }
 }

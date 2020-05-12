@@ -1,11 +1,19 @@
 {
     "changelog.md": {
         "Changelog WiserLink": "Registro de cambios WiserLink",
+        "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Como recordatorio si no hay información sobre la actualización, significa que solo se refiere a la actualización de documentación, traducción o texto",
         "17-05-2018": "2018-05-17",
-        "Rajout de la notion eau chaude eau froide": "Adición del concepto agua caliente agua fría"
+        "Rajout de la notion eau chaude eau froide": "Adición del concepto agua caliente agua fría",
+        " IMPORTANT.": " Importante.",
+        " IMPORTANT?": " Importante?",
+        "IMPORTANT ": "Importante ",
+        "[IMPORTANT": "[Importante",
+        "IMPORTANT]": "Importante]",
+        "*IMPORTANT": "*Importante",
+        "IMPORTANT*": "Importante*"
     },
     "index.md": {
-        "Configuration du plugin": "Configuración del plugin",
+        "Plugin Wiserlink": "Complemento Wiserlink",
         "Le plugin ne comporte pas de configuration générale": "El complemento no tiene una configuración general",
         "Création des équipements": "Creación de equipos",
         "Chaque équipement correspond à un WiserLink": "Cada dispositivo corresponde a un WiserLink",
@@ -15,11 +23,9 @@
         "Le mot de passe (admin par défaut)": "Contraseña (administrador por defecto)",
         "Les commandes": "Las órdenes",
         "Les commandes sont créées automatiquement": "Los pedidos se crean automáticamente",
-        "On retrouve la puissance et l'énergie pour chaque canal du Wiser. On": "Encontramos el poder y la energía para cada canal del Wiser. Nosotros",
-        "retrouve aussi la téléinfo": "también encontrar las noticias de televisión",
-        "Et on retrouve aussi les deux éventuelles": "Y también encontramos los dos posibles",
-        "entrées impulsionnelles": "entradas de impulso",
-        "Vous pouvez pour chaque commande choisir si oui ou non elles seront": "Para cada orden puede elegir si serán o no",
-        "visibles et attribuer un icône": "visible y asignar un icono"
+        "On retrouve la puissance et l'énergie pour chaque canal du Wiser": "Encontramos el poder y la energía para cada canal de Wiser",
+        "On retrouve aussi la téléinfo": "También encontramos las noticias de TV",
+        "Et on retrouve aussi les deux éventuelles entrées impulsionnelles": "Y también encontramos las dos posibles entradas de impulso",
+        "Vous pouvez pour chaque commande choisir si oui ou non elles seront visibles et attribuer un icône": "Para cada pedido, puede elegir si serán visibles o no y asignar un icono"
     }
 }
