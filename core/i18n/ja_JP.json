@@ -1,0 +1,71 @@
+{
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
+        "Image": "画像",
+        "Module": "モジュール",
+        "ID": "",
+        "IP": "",
+        "Date création": "作成日"
+    },
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401-不正アクセス",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "",
+        "Liste objets": "リスト項目",
+        "Rechercher": "検索"
+    },
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401-不正アクセス",
+        "Ajouter un dispositif": "",
+        "Rechercher": "検索",
+        "Gestion": "管理",
+        "Ajouter": "加えます",
+        "Santé": "健康",
+        "Mes Wiserlinks": "",
+        "Sauvegarder": "セーブ",
+        "Supprimer": "取り除きます",
+        "Configuration avancée": "高度な構成",
+        "Equipement": "設備",
+        "Commandes": "コマンド",
+        "Nom de l'équipement": "機器の名前",
+        "Objet parent": "親オブジェクト",
+        "Aucun": "何でもありません",
+        "Catégorie": "カテゴリ",
+        "Activer": "アクティブ",
+        "Visible": "目に見えます",
+        "Adresse IP": "IPアドレス",
+        "Login": "",
+        "Mot de passe": "パスワード",
+        "Nom": "表題",
+        "Options": "オプション",
+        "Action": "アクション"
+    },
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": ""
+    },
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "",
+        "Afficher": "ディスプレイ",
+        "Historiser": "Historicize",
+        "Tester": "テスト"
+    },
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Puissance-1": "",
+        "Energie-1": "",
+        "Puissance-2": "",
+        "Energie-2": "",
+        "Puissance-3": "",
+        "Energie-3": "",
+        "Puissance-4": "",
+        "Energie-4": "",
+        "Puissance-5": "",
+        "Energie-5": "",
+        "Teleinfo": "",
+        "Teleinfo Energie": "",
+        "Gaz": "",
+        "Gaz Energie": "",
+        "Eau chaude": "",
+        "Eau chaude Total": "",
+        "Eau froide": "",
+        "Eau froide Total": "",
+        "Rafraichir": "クール"
+    }
+}

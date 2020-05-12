@@ -1,0 +1,71 @@
+{
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
+        "Image": "Immagine",
+        "Module": "Modulo",
+        "ID": "",
+        "IP": "",
+        "Date création": "Data di creazione"
+    },
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Accesso non autorizzato",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "",
+        "Liste objets": "Elenco oggetti",
+        "Rechercher": "Ricercare"
+    },
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Accesso non autorizzato",
+        "Ajouter un dispositif": "",
+        "Rechercher": "Ricercare",
+        "Gestion": "Gestione",
+        "Ajouter": "Aggiungi",
+        "Santé": "Salute",
+        "Mes Wiserlinks": "",
+        "Sauvegarder": "Salva",
+        "Supprimer": "Rimuovere",
+        "Configuration avancée": "Configurazione avanzata",
+        "Equipement": "Dispositivo",
+        "Commandes": "Comandi",
+        "Nom de l'équipement": "Nome dispositivo",
+        "Objet parent": "Oggetto padre",
+        "Aucun": "Nessuno",
+        "Catégorie": "Categoria",
+        "Activer": "Attivare",
+        "Visible": "Visibile",
+        "Adresse IP": "Indirizzo IP",
+        "Login": "",
+        "Mot de passe": "Password",
+        "Nom": "Nome",
+        "Options": "Opzioni",
+        "Action": "Azione"
+    },
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": ""
+    },
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "",
+        "Afficher": "Mostra",
+        "Historiser": "Storicizza",
+        "Tester": "Prova"
+    },
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Puissance-1": "",
+        "Energie-1": "",
+        "Puissance-2": "",
+        "Energie-2": "",
+        "Puissance-3": "",
+        "Energie-3": "",
+        "Puissance-4": "",
+        "Energie-4": "",
+        "Puissance-5": "",
+        "Energie-5": "",
+        "Teleinfo": "",
+        "Teleinfo Energie": "",
+        "Gaz": "",
+        "Gaz Energie": "",
+        "Eau chaude": "",
+        "Eau chaude Total": "",
+        "Eau froide": "",
+        "Eau froide Total": "",
+        "Rafraichir": "Aggiorna"
+    }
+}

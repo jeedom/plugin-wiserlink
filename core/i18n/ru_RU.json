@@ -1,0 +1,71 @@
+{
+    "plugins\/wiserlink\/desktop\/modal\/health.php": {
+        "Image": "Изображение",
+        "Module": "Модуль",
+        "ID": "Идентификатор",
+        "IP": "",
+        "Date création": "дата создания"
+    },
+    "plugins\/wiserlink\/desktop\/php\/panel.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Aucun objet racine trouvé. Pour en créer un, allez dans Générale -> Objet.<br\/> Si vous ne savez pas quoi faire ou que c\\'est la premiere fois que vous utilisez Jeedom n\\'hésitez pas a consulter cette <a href=\"http:\/\/jeedom.fr\/premier_pas.php\" target=\"_blank\">page<\/a>": "",
+        "Liste objets": "Список элементов",
+        "Rechercher": "поиск"
+    },
+    "plugins\/wiserlink\/desktop\/php\/wiserlink.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Ajouter un dispositif": "",
+        "Rechercher": "поиск",
+        "Gestion": "Управление",
+        "Ajouter": "Добавить",
+        "Santé": "Здоровье",
+        "Mes Wiserlinks": "",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "удаление",
+        "Configuration avancée": "Расширенные настройки",
+        "Equipement": "Оборудование",
+        "Commandes": "Команды",
+        "Nom de l'équipement": "Название оборудования",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Catégorie": "категория",
+        "Activer": "активировать",
+        "Visible": "Видимый",
+        "Adresse IP": "IP Адрес",
+        "Login": "",
+        "Mot de passe": "Пароль",
+        "Nom": "Имя",
+        "Options": "Опции",
+        "Action": "Действие"
+    },
+    "plugins\/wiserlink\/desktop\/js\/panel.js": {
+        "Vous êtes en mode édition vous pouvez redimensionner les widgets": ""
+    },
+    "plugins\/wiserlink\/desktop\/js\/wiserlink.js": {
+        "Santé wiserlink": "",
+        "Afficher": "дисплей",
+        "Historiser": "История",
+        "Tester": "Тест"
+    },
+    "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Puissance-1": "",
+        "Energie-1": "",
+        "Puissance-2": "",
+        "Energie-2": "",
+        "Puissance-3": "",
+        "Energie-3": "",
+        "Puissance-4": "",
+        "Energie-4": "",
+        "Puissance-5": "",
+        "Energie-5": "",
+        "Teleinfo": "",
+        "Teleinfo Energie": "",
+        "Gaz": "",
+        "Gaz Energie": "",
+        "Eau chaude": "",
+        "Eau chaude Total": "",
+        "Eau froide": "",
+        "Eau froide Total": "",
+        "Rafraichir": "Обновить"
+    }
+}
