@@ -67,5 +67,8 @@
         "Eau froide": "Kaltes Wasser",
         "Eau froide Total": "Total kaltes Wasser",
         "Rafraichir": "Aktualisieren"
+    },
+    "info.json": {
+        "Plugin pour afficher les données du module IP Wiser. Il remonte l'ensemble des 5 canaux \/ la téléinfo \/ les 2 modules impulsionnels. Dans chacun des cas les icones sont personnalisables ainsi que les noms et on a la puissance et l'énergie.": "Plugin zur Anzeige der Daten des Wiser IP-Moduls. Es geht alle 5 Kanäle \/ die Tele-Info \/ die 2 Impulsmodule hoch. In jedem Fall sind die Symbole sowie die Namen anpassbar und wir haben die Kraft und Energie"
     }
 }
