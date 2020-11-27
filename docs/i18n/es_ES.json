@@ -7,10 +7,10 @@
         " IMPORTANT.": " Importante.",
         " IMPORTANT?": " Importante?",
         "IMPORTANT ": "Importante ",
-        "[IMPORTANT": "[Importante",
-        "IMPORTANT]": "Importante]",
-        "*IMPORTANT": "*Importante",
-        "IMPORTANT*": "Importante*"
+        " IMPORTANT]": " Importante]",
+        "[IMPORTANT]": "[Importante]",
+        "*IMPORTANT*": "*Importante*",
+        " IMPORTANT*": " Importante*"
     },
     "index.md": {
         "Plugin Wiserlink": "Complemento Wiserlink",
@@ -19,8 +19,8 @@
         "Chaque équipement correspond à un WiserLink": "Cada dispositivo corresponde a un WiserLink",
         "Les infos nécessaires à sa création sont": "La información necesaria para su creación es",
         "L'adresse Ip du Wiser": "La dirección IP más sabia",
-        "Le nom d'utilisateur (admin par défaut)": "Nombre de usuario (administrador por defecto)",
-        "Le mot de passe (admin par défaut)": "Contraseña (administrador por defecto)",
+        "Le nom d'utilisateur (admin par défaut": "Nombre de usuario (administrador predeterminado",
+        "Le mot de passe (admin par défaut": "La contraseña (administrador predeterminado",
         "Les commandes": "Las órdenes",
         "Les commandes sont créées automatiquement": "Los pedidos se crean automáticamente",
         "On retrouve la puissance et l'énergie pour chaque canal du Wiser": "Encontramos el poder y la energía para cada canal de Wiser",

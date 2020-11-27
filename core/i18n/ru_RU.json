@@ -67,5 +67,8 @@
         "Eau froide": "",
         "Eau froide Total": "",
         "Rafraichir": "Обновить"
+    },
+    "info.json": {
+        "Plugin pour afficher les données du module IP Wiser. Il remonte l'ensemble des 5 canaux \/ la téléinfo \/ les 2 modules impulsionnels. Dans chacun des cas les icones sont personnalisables ainsi que les noms et on a la puissance et l'énergie.": ""
     }
 }
