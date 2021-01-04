@@ -1,8 +1,8 @@
 {
     "plugins\/wiserlink\/plugin_info\/configuration.php": {
         "401 - Accès non autorisé": "401 - Yetkisiz erişim",
-        "Temporisation minumum entre deux lectures en secondes": "",
-        "Trop diminuer cette valeur peut rendre instable votre wiser": ""
+        "Temporisation minumum entre deux lectures en secondes": "Temporisation minumum entre deux lectures en secondes",
+        "Trop diminuer cette valeur peut rendre instable votre wiser": "Trop diminuer cette valeur peut rendre instable votre wiser"
     },
     "plugins\/wiserlink\/desktop\/modal\/health.php": {
         "Image": "Fotoğraf",
@@ -53,8 +53,8 @@
         "Tester": "Test et"
     },
     "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
-        "Veuillez vérifier la configuration": "",
-        "Tâche cron introuvable": "",
+        "Veuillez vérifier la configuration": "Veuillez vérifier la configuration",
+        "Tâche cron introuvable": "Tâche cron introuvable",
         "Puissance-1": "Puissance-1",
         "Energie-1": "Energie-1",
         "Puissance-2": "Puissance-2",
@@ -73,16 +73,16 @@
         "Eau chaude Total": "Eau chaude Total",
         "Eau froide": "Eau froide",
         "Eau froide Total": "Eau froide Total",
-        "Charge-1": "",
-        "Energie-Charge-1": "",
-        "Charge-2": "",
-        "Energie-Charge-2": "",
-        "Charge-3": "",
-        "Energie-Charge-3": "",
-        "Charge-4": "",
-        "Energie-Charge-4": "",
-        "Charge-5": "",
-        "Energie-Charge-5": "",
+        "Charge-1": "Charge-1",
+        "Energie-Charge-1": "Energie-Charge-1",
+        "Charge-2": "Charge-2",
+        "Energie-Charge-2": "Energie-Charge-2",
+        "Charge-3": "Charge-3",
+        "Energie-Charge-3": "Energie-Charge-3",
+        "Charge-4": "Charge-4",
+        "Energie-Charge-4": "Energie-Charge-4",
+        "Charge-5": "Charge-5",
+        "Energie-Charge-5": "Energie-Charge-5",
         "Rafraichir": "Yenile"
     },
     "info.json": {
