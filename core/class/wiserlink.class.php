@@ -25,25 +25,12 @@ class wiserlink extends eqLogic {
 	private static $_wiserlinks = null;
 
 	/*     * ***********************Methode static*************************** */
-
-	public static function cron($_eqlogic_id = null) {
-		$eqLogics = ($_eqlogic_id !== null) ? array(eqLogic::byId($_eqlogic_id)) : eqLogic::byType('wiserlink', true);
-		foreach ($eqLogics as $wiserlink) {
-			try {
-				$wiserlink->getwiserlinkInfo();
-			} catch (Exception $e) {
-
-			}
-		}
-	}
 	
 	public static function daemon() {
 		$starttime = microtime (true);
 		log::add('wes','debug','cron start');
 		foreach (self::byType('wes') as $eqLogic) {
-			if($eqLogic->getConfiguration('type') == "general"){
-				$eqLogic->pull();
-			}
+			$eqLogic->getwiserlinkInfo();
 		}
 		log::add('wes','debug','cron stop');
 		$endtime = microtime (true);
