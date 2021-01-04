@@ -1,4 +1,9 @@
 {
+    "plugins\/wiserlink\/plugin_info\/configuration.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Temporisation minumum entre deux lectures en secondes": "Retraso mínimo entre dos lecturas en segundos",
+        "Trop diminuer cette valeur peut rendre instable votre wiser": "Disminuir demasiado este valor puede hacer que su más sabio sea inestable"
+    },
     "plugins\/wiserlink\/desktop\/modal\/health.php": {
         "Image": "Imagen",
         "Module": "Modulo",
@@ -48,6 +53,8 @@
         "Tester": "Probar"
     },
     "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Veuillez vérifier la configuration": "Por favor verifique la configuración",
+        "Tâche cron introuvable": "Tarea Cron no encontrada",
         "Puissance-1": "Poder-1",
         "Energie-1": "Energía-1",
         "Puissance-2": "Poder-2",
@@ -66,6 +73,16 @@
         "Eau chaude Total": "Agua caliente total",
         "Eau froide": "Agua fria",
         "Eau froide Total": "Agua fría total",
+        "Charge-1": "Carga-1",
+        "Energie-Charge-1": "Energía-Carga-1",
+        "Charge-2": "Carga-2",
+        "Energie-Charge-2": "Carga de energía 2",
+        "Charge-3": "Carga-3",
+        "Energie-Charge-3": "Carga de energía 3",
+        "Charge-4": "Carga 4",
+        "Energie-Charge-4": "Carga de energía 4",
+        "Charge-5": "Carga 5",
+        "Energie-Charge-5": "Carga de energía 5",
         "Rafraichir": "Refrescar"
     },
     "info.json": {
