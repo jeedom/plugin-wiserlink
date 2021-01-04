@@ -1,4 +1,9 @@
 {
+    "plugins\/wiserlink\/plugin_info\/configuration.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Temporisation minumum entre deux lectures en secondes": "Minimum delay between two readings in seconds",
+        "Trop diminuer cette valeur peut rendre instable votre wiser": "To decrease this value too much can make your wiser unstable"
+    },
     "plugins\/wiserlink\/desktop\/modal\/health.php": {
         "Image": "Picture",
         "Module": "Module",
@@ -48,6 +53,8 @@
         "Tester": "Test"
     },
     "plugins\/wiserlink\/core\/class\/wiserlink.class.php": {
+        "Veuillez vérifier la configuration": "Please check the configuration",
+        "Tâche cron introuvable": "Cron task not found",
         "Puissance-1": "Power-1",
         "Energie-1": "Energy-1",
         "Puissance-2": "Power-2",
@@ -66,6 +73,16 @@
         "Eau chaude Total": "Total hot water",
         "Eau froide": "Cold water",
         "Eau froide Total": "Total cold water",
+        "Charge-1": "Charge-1",
+        "Energie-Charge-1": "Energy-Load-1",
+        "Charge-2": "Charge-2",
+        "Energie-Charge-2": "Energy-Charge-2",
+        "Charge-3": "Charge-3",
+        "Energie-Charge-3": "Energy-Charge-3",
+        "Charge-4": "Charge-4",
+        "Energie-Charge-4": "Energy-Charge-4",
+        "Charge-5": "Charge-5",
+        "Energie-Charge-5": "Energy-Charge-5",
         "Rafraichir": "Refresh"
     },
     "info.json": {
