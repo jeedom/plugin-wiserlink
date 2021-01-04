@@ -116,8 +116,8 @@ class wiserlink extends eqLogic {
 					$this->checkAndUpdateCmd('load1_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load2'))){
-					$this->checkAndUpdateCmd('load2', round($measure['Power']);
-					$this->checkAndUpdateCmd('load2_energy', round($measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load2', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('load2_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load3'))){
 					$this->checkAndUpdateCmd('load3', round($measure['Power'],3));
