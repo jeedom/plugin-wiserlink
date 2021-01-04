@@ -10,8 +10,9 @@
     },
     "licence": "AGPL",
     "author": "Jeedom SAS",
-    "require": "3.0",
+    "require": "3.3",
     "category": "energy",
+    "hasOwnDeamon": true,
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/energy\/wiserlink\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/energy\/wiserlink\/",
     "language": [

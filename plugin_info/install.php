@@ -24,4 +24,48 @@ function wiserlink_update() {
 	}
 }
 
+function wiserlink_install() {
+	$cron = cron::byClassAndFunction('wiserlink', 'daemon');
+	if (!is_object($cron)) {
+		$cron = new cron();
+		$cron->setClass('wiserlink');
+		$cron->setFunction('daemon');
+		$cron->setEnable(1);
+		$cron->setDeamon(1);
+		$cron->setTimeout(1440);
+		$cron->setSchedule('* * * * *');
+		$cron->save();
+	}
+	config::save('temporisation_lecture', 60, 'wiserlink');
+	$cron->start();
+}
+
+function wiserlink_update() {
+	foreach (eqLogic::byType('wiserlink') as $eqLogic) {
+		$eqLogic->save();
+	}
+	$daemon = cron::byClassAndFunction('wiserlink', 'daemon');
+	if (!is_object($daemon)) {
+		$daemon = new cron();
+		$daemon->setClass('wiserlink');
+		$daemon->setFunction('daemon');
+		$daemon->setEnable(1);
+		$daemon->setDeamon(1);
+		$daemon->setTimeout(1440);
+		$daemon->setSchedule('* * * * *');
+		$daemon->save();
+		$daemon->start();
+		config::save('temporisation_lecture', 60, 'wiserlink');
+	}
+	else {
+		wiserlink::deamon_start();
+	}
+}
+
+function wes_remove() {
+    $cron = cron::byClassAndFunction('wiserlink', 'daemon');
+    if (is_object($cron)) {
+        $cron->remove();
+    }
+}
 ?>

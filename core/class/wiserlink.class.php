@@ -36,6 +36,63 @@ class wiserlink extends eqLogic {
 			}
 		}
 	}
+	
+	public static function daemon() {
+		$starttime = microtime (true);
+		log::add('wes','debug','cron start');
+		foreach (self::byType('wes') as $eqLogic) {
+			if($eqLogic->getConfiguration('type') == "general"){
+				$eqLogic->pull();
+			}
+		}
+		log::add('wes','debug','cron stop');
+		$endtime = microtime (true);
+		if ($endtime - $starttime < config::byKey('temporisation_lecture', 'wes', 60, true)) {
+			usleep(floor((config::byKey('temporisation_lecture', 'wes') + $starttime - $endtime)*1000000));
+		}
+	}
+
+	public static function deamon_info() {
+		$return = array();
+		$return['log'] = '';
+		$return['state'] = 'nok';
+		$cron = cron::byClassAndFunction('wiserlink', 'daemon');
+		if (is_object($cron) && $cron->running()) {
+			$return['state'] = 'ok';
+		}
+		$return['launchable'] = 'ok';
+		return $return;
+	}
+
+	public static function deamon_start($_debug = false) {
+		self::deamon_stop();
+		$deamon_info = self::deamon_info();
+		if ($deamon_info['launchable'] != 'ok') {
+			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
+		}
+		$cron = cron::byClassAndFunction('wiserlink', 'daemon');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->run();
+	}
+
+	public static function deamon_stop() {
+		$cron = cron::byClassAndFunction('wiserlink', 'daemon');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->halt();
+	}
+
+	public static function deamon_changeAutoMode($_mode) {
+		$cron = cron::byClassAndFunction('wiserlink', 'daemon');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->setEnable($_mode);
+		$cron->save();
+	}
 
 	/*     * *********************Méthodes d'instance************************* */
 
@@ -45,27 +102,47 @@ class wiserlink extends eqLogic {
 			log::add('wiserlink','debug','Refresh on : ' .$url);
 			$request_http = new com_http($url);
 			$results = json_decode(trim($request_http->exec($_timeout = 5)), true);
-			log::add('wiserlink','debug',print_r($results,true));
+			log::add('wiserlink','debug',json_encode($results,true));
 			foreach ($results['UsageMeterList'] as $measure) {
-				if (in_array($measure['Type'], array('Load1','Heating'))){
+				if (in_array($measure['Type'], array('Heating'))){
 					$this->checkAndUpdateCmd('ct1', $measure['Power']);
 					$this->checkAndUpdateCmd('ct1_energy', $measure['EnergyConsumed']);
 				}
-				else if (in_array($measure['Type'], array('Load2','Hot water'))){
+				else if (in_array($measure['Type'], array('Hot water'))){
 					$this->checkAndUpdateCmd('ct2', $measure['Power']);
 					$this->checkAndUpdateCmd('ct2_energy', $measure['EnergyConsumed']);
 				}
-				else if (in_array($measure['Type'], array('Load3','Cooling'))){
+				else if (in_array($measure['Type'], array('Cooling'))){
 					$this->checkAndUpdateCmd('ct3', $measure['Power']);
 					$this->checkAndUpdateCmd('ct3_energy', $measure['EnergyConsumed']);
 				}
-				else if (in_array($measure['Type'], array('Load4','Sockets'))){
+				else if (in_array($measure['Type'], array('Sockets'))){
 					$this->checkAndUpdateCmd('ct4', $measure['Power']);
 					$this->checkAndUpdateCmd('ct4_energy', $measure['EnergyConsumed']);
 				}
-				else if (in_array($measure['Type'], array('Load5','Others'))){
+				else if (in_array($measure['Type'], array('Others'))){
 					$this->checkAndUpdateCmd('ct5', $measure['Power']);
 					$this->checkAndUpdateCmd('ct5_energy', $measure['EnergyConsumed']);
+				}
+				else if (in_array($measure['Type'], array('Load1'))){
+					$this->checkAndUpdateCmd('load1', $measure['Power']);
+					$this->checkAndUpdateCmd('load1_energy', $measure['EnergyConsumed']);
+				}
+				else if (in_array($measure['Type'], array('Load2'))){
+					$this->checkAndUpdateCmd('load2', $measure['Power']);
+					$this->checkAndUpdateCmd('load2_energy', $measure['EnergyConsumed']);
+				}
+				else if (in_array($measure['Type'], array('Load3'))){
+					$this->checkAndUpdateCmd('load3', $measure['Power']);
+					$this->checkAndUpdateCmd('load3_energy', $measure['EnergyConsumed']);
+				}
+				else if (in_array($measure['Type'], array('Load4'))){
+					$this->checkAndUpdateCmd('load4', $measure['Power']);
+					$this->checkAndUpdateCmd('load4_energy', $measure['EnergyConsumed']);
+				}
+				else if (in_array($measure['Type'], array('Load5'))){
+					$this->checkAndUpdateCmd('load5', $measure['Power']);
+					$this->checkAndUpdateCmd('load5_energy', $measure['EnergyConsumed']);
 				}
 				else if (in_array($measure['Type'], array('Electricity Meter'))){
 					$this->checkAndUpdateCmd('teleinfo', $measure['Power']);
@@ -391,6 +468,156 @@ class wiserlink extends eqLogic {
 			$cmd->setUnite('m3');
 			$cmd->setTemplate('dashboard', 'line');
 			$cmd->setOrder(18);
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load1');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load1');
+			$cmd->setIsVisible(1);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Charge-1', __FILE__));
+			$cmd->setUnite('W');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load1_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load1_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Energie-Charge-1', __FILE__));
+			$cmd->setUnite('kWh');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'loa21');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load2');
+			$cmd->setIsVisible(1);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Charge-2', __FILE__));
+			$cmd->setUnite('W');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load2_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load2_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Energie-Charge-2', __FILE__));
+			$cmd->setUnite('kWh');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load3');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load3');
+			$cmd->setIsVisible(1);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Charge-3', __FILE__));
+			$cmd->setUnite('W');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load3_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load3_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Energie-Charge-3', __FILE__));
+			$cmd->setUnite('kWh');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load4');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load4');
+			$cmd->setIsVisible(1);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Charge-4', __FILE__));
+			$cmd->setUnite('W');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load4_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load4_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Energie-Charge-4', __FILE__));
+			$cmd->setUnite('kWh');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load5');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load5');
+			$cmd->setIsVisible(1);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Charge-5', __FILE__));
+			$cmd->setUnite('W');
+			$cmd->setTemplate('dashboard', 'line');
+		}
+		$cmd->setType('info');
+		$cmd->setSubType('numeric');
+		$cmd->setEqLogic_id($this->getId());
+		$cmd->save();
+		
+		$cmd = $this->getCmd(null, 'load5_energy');
+		if (!is_object($cmd)) {
+			$cmd = new wiserlinkCmd();
+			$cmd->setLogicalId('load5_energy');
+			$cmd->setIsVisible(0);
+			$cmd->setIsHistorized(1);
+			$cmd->setName(__('Energie-Charge-5', __FILE__));
+			$cmd->setUnite('kWh');
+			$cmd->setTemplate('dashboard', 'line');
 		}
 		$cmd->setType('info');
 		$cmd->setSubType('numeric');
