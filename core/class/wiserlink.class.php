@@ -491,7 +491,7 @@ class wiserlink extends eqLogic {
 		$cmd->setEqLogic_id($this->getId());
 		$cmd->save();
 		
-		$cmd = $this->getCmd(null, 'loa21');
+		$cmd = $this->getCmd(null, 'load2');
 		if (!is_object($cmd)) {
 			$cmd = new wiserlinkCmd();
 			$cmd->setLogicalId('load2');
