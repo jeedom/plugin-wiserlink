@@ -18,12 +18,6 @@
 
 require_once dirname(__FILE__) . '/../../../core/php/core.inc.php';
 
-function wiserlink_update() {
-	foreach (wiserlink::byType('wiserlink') as $wiserlink) {
-		$wiserlink->save();
-	}
-}
-
 function wiserlink_install() {
 	$cron = cron::byClassAndFunction('wiserlink', 'daemon');
 	if (!is_object($cron)) {
