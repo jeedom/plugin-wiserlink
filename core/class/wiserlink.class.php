@@ -92,60 +92,60 @@ class wiserlink extends eqLogic {
 			log::add('wiserlink','debug',json_encode($results,true));
 			foreach ($results['UsageMeterList'] as $measure) {
 				if (in_array($measure['Type'], array('Heating'))){
-					$this->checkAndUpdateCmd('ct1', $measure['Power']);
-					$this->checkAndUpdateCmd('ct1_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('ct1', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('ct1_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Hot water'))){
-					$this->checkAndUpdateCmd('ct2', $measure['Power']);
-					$this->checkAndUpdateCmd('ct2_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('ct2', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('ct2_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Cooling'))){
-					$this->checkAndUpdateCmd('ct3', $measure['Power']);
-					$this->checkAndUpdateCmd('ct3_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('ct3', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('ct3_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Sockets'))){
-					$this->checkAndUpdateCmd('ct4', $measure['Power']);
-					$this->checkAndUpdateCmd('ct4_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('ct4', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('ct4_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Others'))){
-					$this->checkAndUpdateCmd('ct5', $measure['Power']);
-					$this->checkAndUpdateCmd('ct5_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('ct5', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('ct5_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load1'))){
-					$this->checkAndUpdateCmd('load1', $measure['Power']);
-					$this->checkAndUpdateCmd('load1_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load1', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('load1_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load2'))){
-					$this->checkAndUpdateCmd('load2', $measure['Power']);
-					$this->checkAndUpdateCmd('load2_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load2', round($measure['Power']);
+					$this->checkAndUpdateCmd('load2_energy', round($measure['EnergyConsumed']);
 				}
 				else if (in_array($measure['Type'], array('Load3'))){
-					$this->checkAndUpdateCmd('load3', $measure['Power']);
-					$this->checkAndUpdateCmd('load3_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load3', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('load3_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load4'))){
-					$this->checkAndUpdateCmd('load4', $measure['Power']);
-					$this->checkAndUpdateCmd('load4_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load4', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('load4_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Load5'))){
-					$this->checkAndUpdateCmd('load5', $measure['Power']);
-					$this->checkAndUpdateCmd('load5_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('load5', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('load5_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Electricity Meter'))){
-					$this->checkAndUpdateCmd('teleinfo', $measure['Power']);
-					$this->checkAndUpdateCmd('teleinfo_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('teleinfo', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('teleinfo_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Hot Water Meter'))){
-					$this->checkAndUpdateCmd('eau', $measure['Power']);
-					$this->checkAndUpdateCmd('eau_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('eau', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('eau_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Calorimeter'))){
-					$this->checkAndUpdateCmd('gaz', $measure['Power']);
-					$this->checkAndUpdateCmd('gaz_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('gaz', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('gaz_energy', round($measure['EnergyConsumed'],3));
 				}
 				else if (in_array($measure['Type'], array('Cold Water Meter'))){
-					$this->checkAndUpdateCmd('eau2', $measure['Power']);
-					$this->checkAndUpdateCmd('eau2_energy', $measure['EnergyConsumed']);
+					$this->checkAndUpdateCmd('eau2', round($measure['Power'],3));
+					$this->checkAndUpdateCmd('eau2_energy', round($measure['EnergyConsumed'],3));
 				}
 			}
 		}
