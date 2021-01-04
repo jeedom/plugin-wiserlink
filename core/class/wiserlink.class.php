@@ -28,14 +28,14 @@ class wiserlink extends eqLogic {
 	
 	public static function daemon() {
 		$starttime = microtime (true);
-		log::add('wes','debug','cron start');
-		foreach (self::byType('wes') as $eqLogic) {
+		log::add('wiserlink','debug','cron start');
+		foreach (self::byType('wiserlink') as $eqLogic) {
 			$eqLogic->getwiserlinkInfo();
 		}
-		log::add('wes','debug','cron stop');
+		log::add('wiserlink','debug','cron stop');
 		$endtime = microtime (true);
-		if ($endtime - $starttime < config::byKey('temporisation_lecture', 'wes', 60, true)) {
-			usleep(floor((config::byKey('temporisation_lecture', 'wes') + $starttime - $endtime)*1000000));
+		if ($endtime - $starttime < config::byKey('temporisation_lecture', 'wiserlink', 60, true)) {
+			usleep(floor((config::byKey('temporisation_lecture', 'wiserlink') + $starttime - $endtime)*1000000));
 		}
 	}
 
