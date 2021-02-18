@@ -2,7 +2,7 @@
     "id": "wiserlink",
     "name": "WiserLink",
     "description": {
-        "fr_FR": "Plugin pour afficher les données du module IP Wiser. Il remonte l'ensemble des 5 canaux \/ la téléinfo \/ les 2 modules impulsionnels. Dans chacun des cas les icones sont personnalisables ainsi que les noms et on a la puissance et l'énergie.",
+        "fr_FR": "Plugin pour afficher les données du module IP Wiser. Il remonte l'ensemble des 5 canaux \/ la téléinfo \/ les 2 modules impulsionnels. Dans chacun des cas les icones sont personnalisables ainsi que les noms et on a la puissance et l'énergie. Ne fonctionne qu'avec les premières version du Wiser Schneider",
         "en_US": "Plugin to display the data of the Wiser IP module. It goes up all the 5 channels \/ the tele-info \/ the 2 impulse modules. In each case the icons are customizable as well as the names and we have the power and energy",
         "es_ES": "Plugin para mostrar los datos del módulo Wiser IP. Sube los 5 canales \/ la teleinformación \/ los 2 módulos de impulso. En cada caso, los iconos son personalizables, así como los nombres y tenemos el poder y la energía",
         "de_DE": "Plugin zur Anzeige der Daten des Wiser IP-Moduls. Es geht alle 5 Kanäle \/ die Tele-Info \/ die 2 Impulsmodule hoch. In jedem Fall sind die Symbole sowie die Namen anpassbar und wir haben die Kraft und Energie",
